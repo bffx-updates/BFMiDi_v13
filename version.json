@@ -1,13 +1,13 @@
 {
-  "version": "14.0",
-  "generated": "2026-09-19T20:27:59.099Z",
+  "version": "14.1",
+  "generated": "2026-09-27T19:51:33.848Z",
   "fw": {
     "s3": {
-      "version": "14.0",
+      "version": "14.1",
       "file": "bin_S3/firmware.bin",
-      "size": 2025264,
-      "sha256": "9387f71b0446700fe415b6b14e5df9af4aed70b6175e56addb600e741018f4c6",
-      "built": "2026-09-19T20:27:38.438Z",
+      "size": 2020528,
+      "sha256": "cb87e070a0987f1c09c81205fbf1ad7abdf0b58319894bc6b6ec97cab01c1c93",
+      "built": "2026-09-27T19:10:34.029Z",
       "flash": [
         {
           "file": "bin_S3/bootloader.bin",
@@ -24,8 +24,8 @@
         {
           "file": "bin_S3/firmware.bin",
           "address": 65536,
-          "size": 2025264,
-          "sha256": "9387f71b0446700fe415b6b14e5df9af4aed70b6175e56addb600e741018f4c6"
+          "size": 2020528,
+          "sha256": "cb87e070a0987f1c09c81205fbf1ad7abdf0b58319894bc6b6ec97cab01c1c93"
         },
         {
           "file": "bin_S3/otadata.bin",
@@ -37,17 +37,17 @@
           "file": "bin_S3/littlefs.bin",
           "address": 7471104,
           "size": 5242880,
-          "sha256": "959a39ae5aa5d8adcd4077ae2c301c552c2987d55364b3b7d82e48f7d53bd7c5"
+          "sha256": "ea87012b89eb75ce49b5e4a82e126baeeb9183a9b6c2398d7114238ca962dba9"
         }
       ],
-      "notes": "v13.3 — Novidades da linha 13\r\n• Backup automático na atualização: ao gravar pelo cabo, seus presets,\r\n  imagens, ícones e aparelhos personalizados são salvos antes e devolvidos\r\n  ao pedal depois.\r\n• Assistente de Configuração: monta um preset inteiro passo a passo, sem\r\n  precisar entender MIDI.\r\n• Novo comportamento STEPS: cada toque avança um passo de uma sequência,\r\n  com figura rítmica por passo e opção de seguir o TAP TEMPO ou um BPM fixo.\r\n• Novo comportamento CONTROL: um toque alterna entre FX 1 e FX 2 — quem\r\n  entra liga, quem sai desliga.\r\n• Chamada de presets configurável: você escolhe o que cada footswitch faz\r\n  no toque curto e no toque longo (chamar preset, trocar banco, entrar em\r\n  LIVE e mais).\r\n• Combos: dois footswitches pisados juntos executam uma ação à sua escolha,\r\n  em 9 pares disponíveis.\r\n• Layout de tela por preset: cada preset pode ter o seu, sem mexer no global.\r\n• Tamanho da fonte do nome ajustável por footswitch.\r\n• Prévia do editor agora mostra o tile exatamente como sai no display.\r\n• Anel único no STOMP: os 3 LEDs acendem juntos na cor da última seção usada.\r\n• Pedal de expressão por preset: cada preset pode mandar o pedal para um\r\n  comando diferente.\r\n• Card DISPARO MIDI: dispara um CC ou PC na mão para descobrir a que o seu\r\n  processador responde.\r\n• Backup por banco: salva ou restaura os 6 presets de uma letra, com as\r\n  imagens e ícones que ela usa.\r\n• Valores de ligado/desligado ajustáveis por canal.\r\n• Correções de estabilidade e ajustes visuais no editor."
+      "notes": "v14.1 — Novidades\r\n• Pedal de expressão com faixa de saída: escolha, em porcentagem, o valor\r\n  que o pedal manda recolhido (MÍN) e na ponta (MÁX). Ex.: MÍN em 50% faz o\r\n  pedal recolhido mandar 64. MÍN maior que o MÁX inverte o sentido.\r\n  Em GLOBAL › CONTROLES › Expressão Externa.\r\n• Novo card TEMPOS DE DISPARO, em SYSTEM › HARDWARE:\r\n  – Pausa entre HEADER e LIVE: espera extra entre o PC do preset e o MIDI\r\n    dos footswitches do modo LIVE, para aparelhos que perdem os primeiros\r\n    comandos enquanto carregam o preset. Soma com a espera que já existe.\r\n  – Pausa por canal: intervalo mínimo entre todas as mensagens enviadas\r\n    para um canal escolhido (ex.: 100 ms no canal 2).\r\n• LED apagado mais fácil de ver no editor: o anel aparece vazado na cor\r\n  escolhida, em vez de escurecido."
     },
     "s2": {
-      "version": "14.0",
+      "version": "14.1",
       "file": "bin_S2/firmware.bin",
-      "size": 1980656,
-      "sha256": "ccf158fa4229de3bfcd125511b72b133725d497cd6ce63c97695f6b30893eb2a",
-      "built": "2026-09-19T20:27:38.658Z",
+      "size": 1976256,
+      "sha256": "f60697209920b22d1f20c50550295ecc62da70d0d3d1ee6ec736ecad461aa3d8",
+      "built": "2026-09-27T19:21:07.604Z",
       "flash": [
         {
           "file": "bin_S2/bootloader.bin",
@@ -64,34 +64,34 @@
         {
           "file": "bin_S2/firmware.bin",
           "address": 65536,
-          "size": 1980656,
-          "sha256": "ccf158fa4229de3bfcd125511b72b133725d497cd6ce63c97695f6b30893eb2a"
+          "size": 1976256,
+          "sha256": "f60697209920b22d1f20c50550295ecc62da70d0d3d1ee6ec736ecad461aa3d8"
         },
         {
           "file": "bin_S2/littlefs.bin",
           "address": 2621440,
           "size": 1572864,
-          "sha256": "454b2b2791473dbbc43cf4400f61e4edbc23c870306bcb93a39239a73f902ad9"
+          "sha256": "fa02180f8fa52696c943e3ca19eaf6588e49d0e892b74ebdc3f1da070092d3df"
         }
       ],
-      "notes": "v13.3 — Novidades da linha 13\r\n• Backup automático na atualização: ao gravar pelo cabo, seus presets,\r\n  imagens, ícones e aparelhos personalizados são salvos antes e devolvidos\r\n  ao pedal depois.\r\n• Assistente de Configuração: monta um preset inteiro passo a passo, sem\r\n  precisar entender MIDI.\r\n• Novo comportamento STEPS: cada toque avança um passo de uma sequência,\r\n  com figura rítmica por passo e opção de seguir o TAP TEMPO ou um BPM fixo.\r\n• Novo comportamento CONTROL: um toque alterna entre FX 1 e FX 2 — quem\r\n  entra liga, quem sai desliga.\r\n• Chamada de presets configurável: você escolhe o que cada footswitch faz\r\n  no toque curto e no toque longo (chamar preset, trocar banco, entrar em\r\n  LIVE e mais).\r\n• Combos: dois footswitches pisados juntos executam uma ação à sua escolha,\r\n  em 9 pares disponíveis.\r\n• Layout de tela por preset: cada preset pode ter o seu, sem mexer no global.\r\n• Tamanho da fonte do nome ajustável por footswitch.\r\n• Prévia do editor agora mostra o tile exatamente como sai no display.\r\n• Anel único no STOMP: os 3 LEDs acendem juntos na cor da última seção usada.\r\n• Pedal de expressão por preset: cada preset pode mandar o pedal para um\r\n  comando diferente.\r\n• Card DISPARO MIDI: dispara um CC ou PC na mão para descobrir a que o seu\r\n  processador responde.\r\n• Backup por banco: salva ou restaura os 6 presets de uma letra, com as\r\n  imagens e ícones que ela usa.\r\n• Valores de ligado/desligado ajustáveis por canal.\r\n• Correções de estabilidade e ajustes visuais no editor."
+      "notes": "v14.1 — Novidades\r\n• Pedal de expressão com faixa de saída: escolha, em porcentagem, o valor\r\n  que o pedal manda recolhido (MÍN) e na ponta (MÁX). Ex.: MÍN em 50% faz o\r\n  pedal recolhido mandar 64. MÍN maior que o MÁX inverte o sentido.\r\n  Em GLOBAL › CONTROLES › Expressão Externa.\r\n• Novo card TEMPOS DE DISPARO, em SYSTEM › HARDWARE:\r\n  – Pausa entre HEADER e LIVE: espera extra entre o PC do preset e o MIDI\r\n    dos footswitches do modo LIVE, para aparelhos que perdem os primeiros\r\n    comandos enquanto carregam o preset. Soma com a espera que já existe.\r\n  – Pausa por canal: intervalo mínimo entre todas as mensagens enviadas\r\n    para um canal escolhido (ex.: 100 ms no canal 2).\r\n• LED apagado mais fácil de ver no editor: o anel aparece vazado na cor\r\n  escolhida, em vez de escurecido."
     }
   },
   "webapp": {
-    "version": "14.0",
-    "build": "14.0+6f70c994292a",
+    "version": "14.1",
+    "build": "14.1+00235b86d0e8",
     "files": [
       {
         "path": "/app.css.gz",
         "url": "data/app.css.gz",
-        "size": 75318,
-        "sha256": "40005be67ecdf113f662c30b698091ff34bd203daa4fce3740279c06b2f5a277"
+        "size": 75448,
+        "sha256": "c19009cd84b03aae71404b45fcf9797fc55ba25bb1a635c91133f1712a901d28"
       },
       {
         "path": "/app.js.gz",
         "url": "data/app.js.gz",
-        "size": 241579,
-        "sha256": "5eb7e684609be6321b638c0d4d5980039559b72386fbf421e8fc3cecca7a05a2"
+        "size": 245625,
+        "sha256": "2877dadbc25081a9ff283c4e7ae432d26b71ef949772a4cbc9c8529acb0c9cf5"
       },
       {
         "path": "/icons/app-192.png",
@@ -439,13 +439,13 @@
         "path": "/sw.js",
         "url": "data/sw.js",
         "size": 3079,
-        "sha256": "228d71c7b5bdd5ba529d791dc53cb252ff7fef2d642a811b1a3c74f0a8c80833"
+        "sha256": "68d05a3ee9e445f2f6d4798e13748793877f146bda3b619f27f927666660104e"
       },
       {
         "path": "/webapp_version.txt",
         "url": "data/webapp_version.txt",
         "size": 17,
-        "sha256": "8f8686dcf16408db1ba7655b57a67f663ffb2c9704667300d7406367247f1696"
+        "sha256": "f349b0f1f789a0b0209e77369614915daaf4967f48e788fe7059b310161326b6"
       }
     ]
   }
